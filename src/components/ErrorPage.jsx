@@ -1,5 +1,6 @@
 import { useRouteError } from "react-router-dom";
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text, Button } from "@chakra-ui/react";
+import { ArrowBackIcon } from "@chakra-ui/icons"
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -12,6 +13,7 @@ export default function ErrorPage() {
       <Text fontSize="24px">
         <i>{error.statusText || error.message}</i>
       </Text>
+      <Button colorScheme="orange" margin={"20px"} leftIcon={<ArrowBackIcon/>} onClick={()=>window.location.href="/"}>Return to home</Button>
     </Flex>
   );
 }
