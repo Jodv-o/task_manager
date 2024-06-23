@@ -23,7 +23,7 @@ export default function LoginPage(){
                             </InputRightAddon>
                         </InputGroup>
 
-                        <Button colorScheme="orange" mt="10px">Log In</Button>
+                        <Button colorScheme="orange" mt="10px">Sign In</Button>
 
                         <Text mt="10px">Do not have an account <ChakraLink as={ReactRouterLink} to='/register' color="blue">Create One</ChakraLink></Text>
                     </FormControl>
